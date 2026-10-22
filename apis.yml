@@ -1,23 +1,96 @@
 aid: ora-banda-mining
+
 name: Ora Banda Mining
-description: 'Ora Banda Mining is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Ora Banda Mining Ltd (OBM) is a West Australian gold producer based in the historic Eastern Goldfields.
+  Its Davyhurst gold project comprises several operating mines (the Riverina and Sand King underground mines) and the
+  established Davyhurst processing plant, with systematic exploration across the Riverina, Round Dam, Siberia, Mulline,
+  Callion and Python trends. The company states a strategy of creating value through exploring, developing and delivering
+  organic growth. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026); the company website publishes
+  no developer portal, API documentation or public API.'
+
+image: https://orabandamining.com.au/wp-content/uploads/2026/02/obm.png
+
 url: https://raw.githubusercontent.com/api-evangelist/ora-banda-mining/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Gold Production
+- Mineral Exploration
+- Western Australia
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/ora-banda-mining-llms.txt
+- type: Hosts
+  url: hosts/ora-banda-mining-hosts.yml
+- type: DomainSecurity
+  url: security/ora-banda-mining-domain-security.yml
 - type: Website
   url: https://orabandamining.com.au/
+- type: About
+  url: https://orabandamining.com.au/about/
+- type: Investors
+  url: https://orabandamining.com.au/investors/
+- type: Support
+  url: https://orabandamining.com.au/contact/
+- type: PrivacyPolicy
+  url: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+- type: Careers
+  url: https://orabandamining.com.au/job-vacancies/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/orabandamining/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Homepage title "Home - Ora Banda Mining" and footer "Ora Banda Mining Ltd" confirm the domain. The site is
+    a WordPress corporate/investor site; its nav and footer link no developer portal, API docs, terms of service, blog,
+    status page or GitHub organization.
+  evidence:
+  - url: https://orabandamining.com.au/
+    status: 200
+  - url: https://orabandamining.com.au/about/
+    status: 200
+  - url: https://orabandamining.com.au/investors/
+    status: 200
+  - url: https://orabandamining.com.au/contact/
+    status: 200
+  - url: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+    status: 200
+  - url: https://orabandamining.com.au/job-vacancies/
+    status: 200
+  - url: https://orabandamining.com.au/wp-content/uploads/2026/02/obm.png
+    status: 200
+  - url: https://www.linkedin.com/company/orabandamining/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

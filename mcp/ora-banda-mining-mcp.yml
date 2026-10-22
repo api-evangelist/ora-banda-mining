@@ -1,0 +1,24 @@
+type: MCPServer
+name: Ora Banda Mining MCP server
+generated: '2026-10-22'
+method: none
+status: none
+note: >-
+  Checked, nothing there. Ora Banda Mining is a West Australian gold producer whose
+  WordPress corporate site publishes no API, OpenAPI contract or MCP server. No
+  candidate tool list was derived because there is no OpenAPI contract to derive from.
+evidence:
+- url: https://orabandamining.com.au/.well-known/mcp.json
+  status: 404
+- url: https://orabandamining.com.au/.well-known/mcp/server-card.json
+  status: 404
+- url: https://orabandamining.com.au/llms.txt
+  status: 200
+  finding: provider llms.txt (All in One SEO generated) lists corporate, investor and announcement pages only; no API, developer or MCP entries
+- search: '"Ora Banda Mining" MCP server OR API developer'
+  finding: no MCP server or API attributed to Ora Banda Mining (results were unrelated Oraichain/Oura servers)
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed

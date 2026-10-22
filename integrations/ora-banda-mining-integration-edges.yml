@@ -1,0 +1,18 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/ora-banda-mining/integrations
+- https://n8n.io/integrations/ora-banda-mining/
+- https://composio.dev/toolkits/ora-banda-mining
+- https://monid.ai/tools/ora-banda-mining
+checked:
+- https://orabandamining.com.au/
+- https://composio.dev/toolkits/ora-banda-mining
+- https://monid.ai/tools/ora-banda-mining
+- https://n8n.io/integrations/ora-banda-mining/
+- https://zapier.com/apps/ora-banda-mining/integrations
+summary: No integrations, partner marketplace or API contract found; Ora Banda Mining is a gold mining company with
+  no developer surface.
+marketplace_apps: []
+edges: []
+templates: []

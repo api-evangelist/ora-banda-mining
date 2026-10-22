@@ -1,0 +1,64 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+notes: >-
+  The only legal/trust document Ora Banda Mining publishes is its Privacy Policy (OBM-COR-POL-012, a PDF footed
+  "27 SEPTEMBER 2023"). Quotes below are copied from the PDF text and the line breaks are joined with spaces.
+  The policy does not address subprocessors, incident or breach notification, AI, Global Privacy Control,
+  accessibility or any of the other catalog signals, so nothing is recorded for them.
+signals:
+  data_subject_request:
+    url: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+    section: '8. Assessing and correcting personal information'
+    channel: Privacy Officer
+    stated_sla: 'We will respond to all such requests within a reasonable time.'
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (1300 363 992, enquiries@oaic.gov.au)
+    evidence:
+    - source: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You may contact our Privacy Officer to request access to the personal information that we hold about you
+        and/or to correct any inaccurate or out of date information. We will respond to all such requests within
+        a reasonable time.
+    - source: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In some circumstances, we may not be able to provide you with all personal information we have about you,
+        including where a legal exemption applies or where providing such information may compromise the privacy
+        of others. If we cannot provide you access, we will tell you why.
+    note: >-
+      The policy grants access and correction rights under the Australian Privacy Act, sent through a Privacy
+      Officer, with no fixed response time ("a reasonable time"). It names no deletion or portability right.
+      Unresolved complaints can go to the OAIC.
+  data_retention:
+    url: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+    section: '6. Disclosure of personal information'
+    evidence:
+    - source: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Where OBM no longer requires the personal information of an individual for one of the purposes outlined in
+        this Privacy Policy, OBM will take reasonable steps to destroy or de-identify that information, subject to
+        any legal obligation to keep the information for any required period of time.
+    note: >-
+      A purpose-limited rule: data is destroyed or de-identified once no longer needed, subject to legal holds.
+      The policy states no retention periods.
+  data_residency:
+    url: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+    section: '9. Disclosure of personal information to overseas recipients'
+    evidence:
+    - source: https://orabandamining.com.au/wp-content/uploads/2026/02/OBM-COR-POL-012-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        It is unlikely that OBM will disclose collected personal information to overseas recipients. Any such
+        disclosure by OBM would comply with the Privacy Act. If you do not wish for your collected personal
+        information to be disclosed to overseas recipients, please let us know.
+    note: >-
+      A statement about cross-border disclosure (APP 8), not a promise to keep data in a specific region.
+      Overseas transfer is called unlikely, and individuals can object to it. No storage locations are named.
